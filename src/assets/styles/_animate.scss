@@ -1,0 +1,86 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-leave {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearance {
+  0% {
+    // transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    // transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes disappearance {
+  0% {
+    // transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    // transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+// vue animation
+
+.right-slide-enter-active,
+.right-slide-leave-active {
+  transition: all 0.25s ease-out;
+}
+.right-slide-enter-from {
+  transform: translateX(100%);
+}
+.right-slide-enter-to {
+  transform: translateX(0);
+}
+.right-slide-leave-from {
+  transform: translateX(0);
+}
+.right-slide-leave-to {
+  transform: translateX(100%);
+}
+
+.fade-enter-active {
+  animation: fade-enter 0.3s;
+}
+.fade-leave-active {
+  animation: fade-leave 0.3s;
+}
+
+
+.list-enter-active {
+  animation: appearance 0.5s;
+}
+.list-leave-active {
+  position: absolute;
+  animation: disappearance 0.5s;
+}
+.list-move {
+  transition: transform 0.5s;
+}

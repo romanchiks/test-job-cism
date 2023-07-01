@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+* {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  box-sizing: border-box;
+  color: $text-black-color;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+.title-1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.title-2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+// .header {
+//   display: flex;
+//   align-items: center;
+//   height: 90px;
+//   padding: 0 24px;
+//   background-color: $block-main-background;
+//   border-bottom: 1px solid $block-gray-background;
+// }
+
+// .scrollbar {
+//   scrollbar-color: $block-blue-background
+//     transparentize($block-black-background, 0.88);
+//   scrollbar-width: 4px;
+
+//   &::-webkit-scrollbar {
+//     width: 4px;
+//     height: 4px;
+//   }
+
+//   &::-webkit-scrollbar-track {
+//     border-radius: 5px;
+//     background-color: transparentize($block-black-background, 0.88);
+//     width: 4px;
+//   }
+
+//   &::-webkit-scrollbar-thumb {
+//     background-color: $block-blue-background;
+//     border-radius: 3.5px;
+//     width: 4px;
+
+//     &:hover {
+//       background-color: $block-blue-background;
+//     }
+//   }
+// }
