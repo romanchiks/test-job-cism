@@ -70,8 +70,6 @@ function changeFilter(filterValue: string): void {
   }
 
   & .list-section {
-    overflow-y: auto;
-
     &__items {
       position: relative;
       flex-grow: 1;
